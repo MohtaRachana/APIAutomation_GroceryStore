@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/apiauthentication\/registernewclient[1.1:18]","start":1715940651812,"end":1715940652850,"title":"com\/api\/automation\/apiauthentication\/registernewclient[1.1:18] 15:40:51.812-15:40:52.850 Register a New API Client","className":"failed"},{"id":2,"group":1,"content":"com\/api\/automation\/cart\/addItemsToCart[1.1:24]","start":1715940653312,"end":1715940654929,"title":"com\/api\/automation\/cart\/addItemsToCart[1.1:24] 15:40:53.312-15:40:54.929 Add items in the cart"},{"id":3,"group":1,"content":"com\/api\/automation\/cart\/addItemsToCart[1.2:24]","start":1715940654934,"end":1715940656005,"title":"com\/api\/automation\/cart\/addItemsToCart[1.2:24] 15:40:54.934-15:40:56.005 Add items in the cart"},{"id":4,"group":1,"content":"com\/api\/automation\/cart\/addItemsToCart[1.3:24]","start":1715940656011,"end":1715940657019,"title":"com\/api\/automation\/cart\/addItemsToCart[1.3:24] 15:40:56.011-15:40:57.019 Add items in the cart"},{"id":5,"group":1,"content":"com\/api\/automation\/cart\/addItemsToCart[1.4:24]","start":1715940657025,"end":1715940658024,"title":"com\/api\/automation\/cart\/addItemsToCart[1.4:24] 15:40:57.025-15:40:58.024 Add items in the cart"},{"id":6,"group":1,"content":"com\/api\/automation\/cart\/createcart[1:7]","start":1715940658272,"end":1715940659222,"title":"com\/api\/automation\/cart\/createcart[1:7] 15:40:58.272-15:40:59.222 create cart"},{"id":7,"group":1,"content":"com\/api\/automation\/cart\/delete[1:19]","start":1715940659290,"end":1715940660117,"title":"com\/api\/automation\/cart\/delete[1:19] 15:40:59.290-15:41:00.117","className":"failed"},{"id":8,"group":1,"content":"com\/api\/automation\/cart\/getCartItem[1:13]","start":1715940660173,"end":1715940660908,"title":"com\/api\/automation\/cart\/getCartItem[1:13] 15:41:00.173-15:41:00.908"},{"id":9,"group":1,"content":"com\/api\/automation\/cart\/replaceProduct[1.1:30]","start":1715940660949,"end":1715940661651,"title":"com\/api\/automation\/cart\/replaceProduct[1.1:30] 15:41:00.949-15:41:01.651","className":"failed"},{"id":10,"group":1,"content":"com\/api\/automation\/cart\/updateQuantity[1.1:30]","start":1715940661691,"end":1715940662372,"title":"com\/api\/automation\/cart\/updateQuantity[1.1:30] 15:41:01.691-15:41:02.372","className":"failed"},{"id":11,"group":1,"content":"com\/api\/automation\/order\/createOrder[1.1:32]","start":1715940662412,"end":1715940663113,"title":"com\/api\/automation\/order\/createOrder[1.1:32] 15:41:02.412-15:41:03.113","className":"failed"},{"id":12,"group":1,"content":"com\/api\/automation\/order\/deleteOrder[1:18]","start":1715940663151,"end":1715940663843,"title":"com\/api\/automation\/order\/deleteOrder[1:18] 15:41:03.151-15:41:03.843","className":"failed"},{"id":13,"group":1,"content":"com\/api\/automation\/order\/getOrder[1:18]","start":1715940663892,"end":1715940664564,"title":"com\/api\/automation\/order\/getOrder[1:18] 15:41:03.892-15:41:04.564","className":"failed"},{"id":14,"group":1,"content":"com\/api\/automation\/order\/updateOrder[1.1:31]","start":1715940664608,"end":1715940665306,"title":"com\/api\/automation\/order\/updateOrder[1.1:31] 15:41:04.608-15:41:05.306","className":"failed"},{"id":15,"group":1,"content":"com\/api\/automation\/products\/getProduct[1:6]","start":1715940665342,"end":1715940666017,"title":"com\/api\/automation\/products\/getProduct[1:6] 15:41:05.342-15:41:06.017 Retrieve all products"},{"id":16,"group":1,"content":"com\/api\/automation\/products\/getProduct[2:17]","start":1715940666021,"end":1715940666711,"title":"com\/api\/automation\/products\/getProduct[2:17] 15:41:06.021-15:41:06.711 Retrieve a specific product"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

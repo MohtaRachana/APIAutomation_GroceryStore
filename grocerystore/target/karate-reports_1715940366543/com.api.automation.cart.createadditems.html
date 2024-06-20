@@ -1,0 +1,3019 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"5aa8b7d6-ee3c-46aa-8460-1f939bc78103",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.api.automation.cart.createadditems</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">6</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-05-17 01:21:15 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>create cart</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.1:30]"><span>[2.1:30]</span> <span>Add items in the cart</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.2:30]"><span>[2.2:30]</span> <span>Add items in the cart</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.3:30]"><span>[2.3:30]</span> <span>Add items in the cart</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.4:30]"><span>[2.4:30]</span> <span>Add items in the cart</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:34]"><span>[3:34]</span> <span>Get cart items</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:60]"><span>[4:60]</span> <span>Update Quantity of an Item in the Cart</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:88]"><span>[5:88]</span> <span>Delete the item in the cart</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/automation/cart/createadditems.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Add Items to Cart</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">create cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1830</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:21:08.594 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># create cart</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/carts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1814</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">13:21:08.814 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/carts
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:21:10.416 response time in milliseconds: 1598
+1 &lt; 201
+1 &lt; Date: Fri, 17 May 2024 07:51:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 49
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;31-RWDgrSzhMIAN5sU6QHhgdgEpc/4&quot;
+{&quot;created&quot;:true,&quot;cartId&quot;:&quot;HrMWAoiN93D9Q6mS06Gn-&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartId = response.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">13:21:10.448 [print] Cart ID: HrMWAoiN93D9Q6mS06Gn- 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.write(cartId,&#39;cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">13:21:10.454 write to file: target\cartId.txt
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:30]</span>
+                <span class="scenario-name">Add items in the cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>779</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">13:21:10.484 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def File = Java.type(&#39;java.io.File&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Scanner = Java.type(&#39;java.util.Scanner&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = &#39;C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/CartId.txt&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def file = new File(path)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def scanner = new Scanner(file)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartId = scanner.useDelimiter(&#39;\\Z&#39;).next()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>scanner.close()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>Given: &#39;/carts/&#39; + cartId + &#39;/items&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;productId&quot;: 4643 ,&quot;category&quot;:coffee,&quot;quantity&quot;:1}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">719</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.26">13:21:10.583 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:4643,&quot;category&quot;:&quot;coffee&quot;,&quot;quantity&quot;:1}
+
+13:21:11.257 response time in milliseconds: 672
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:51:07 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;54-0M1W4PX+XMa0VrPIhDCvHEdTW2w&quot;
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.27">13:21:11.266 classpath:com/api/automation/cart/createadditems.feature:27
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 672, url: https://simple-grocery-store-api.glitch.me, response: 
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+classpath:com/api/automation/cart/createadditems.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:30]</span>
+                <span class="scenario-name">Add items in the cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>676</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">13:21:11.285 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def File = Java.type(&#39;java.io.File&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Scanner = Java.type(&#39;java.util.Scanner&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = &#39;C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/CartId.txt&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def file = new File(path)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def scanner = new Scanner(file)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartId = scanner.useDelimiter(&#39;\\Z&#39;).next()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>scanner.close()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>Given: &#39;/carts/&#39; + cartId + &#39;/items&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;productId&quot;: 4641 ,&quot;category&quot;:coffee,&quot;quantity&quot;:3}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">671</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.26">13:21:11.294 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:4641,&quot;category&quot;:&quot;coffee&quot;,&quot;quantity&quot;:3}
+
+13:21:11.961 response time in milliseconds: 666
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:51:08 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;54-0M1W4PX+XMa0VrPIhDCvHEdTW2w&quot;
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.27">13:21:11.964 classpath:com/api/automation/cart/createadditems.feature:27
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 666, url: https://simple-grocery-store-api.glitch.me, response: 
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+classpath:com/api/automation/cart/createadditems.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:30]</span>
+                <span class="scenario-name">Add items in the cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>660</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.3:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.3:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">13:21:11.973 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def File = Java.type(&#39;java.io.File&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Scanner = Java.type(&#39;java.util.Scanner&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = &#39;C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/CartId.txt&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def file = new File(path)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def scanner = new Scanner(file)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartId = scanner.useDelimiter(&#39;\\Z&#39;).next()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>scanner.close()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>Given: &#39;/carts/&#39; + cartId + &#39;/items&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;productId&quot;: 1225 ,&quot;category&quot;:fresh-produce,&quot;quantity&quot;:4}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">656</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.26">13:21:11.980 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:1225,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;quantity&quot;:4}
+
+13:21:12.632 response time in milliseconds: 651
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:51:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;54-0M1W4PX+XMa0VrPIhDCvHEdTW2w&quot;
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.27">13:21:12.634 classpath:com/api/automation/cart/createadditems.feature:27
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 651, url: https://simple-grocery-store-api.glitch.me, response: 
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+classpath:com/api/automation/cart/createadditems.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.4:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.4:30]</span>
+                <span class="scenario-name">Add items in the cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>787</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.4:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.4:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.4">13:21:12.643 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def File = Java.type(&#39;java.io.File&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Scanner = Java.type(&#39;java.util.Scanner&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = &#39;C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/CartId.txt&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def file = new File(path)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def scanner = new Scanner(file)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartId = scanner.useDelimiter(&#39;\\Z&#39;).next()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>scanner.close()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>Given: &#39;/carts/&#39; + cartId + &#39;/items&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;productId&quot;: 2177 ,&quot;category&quot;:meat-seafood,&quot;quantity&quot;:2}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">784</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.26">13:21:12.648 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:2177,&quot;category&quot;:&quot;meat-seafood&quot;,&quot;quantity&quot;:2}
+
+13:21:13.428 response time in milliseconds: 778
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:51:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;54-0M1W4PX+XMa0VrPIhDCvHEdTW2w&quot;
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.27">13:21:13.431 classpath:com/api/automation/cart/createadditems.feature:27
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 778, url: https://simple-grocery-store-api.glitch.me, response: 
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+classpath:com/api/automation/cart/createadditems.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcart</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:34]</span>
+                <span class="scenario-name">Get cart items</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>794</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:21:13.437 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Function to read cartId from file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.36">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+  scanner.close();
+  return cartId;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartIdFromFile = readCartIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId is read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID from file:&#39;, cartIdFromFile</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">13:21:13.450 [print] Cart ID from file: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/carts/&#39;+ cartIdFromFile + &#39;/items&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">758</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">13:21:13.452 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/carts/9QOic9UGyoyprQLqi2cZc/items
+1 &gt; Accept: application/json
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:21:14.207 response time in milliseconds: 754
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 07:51:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w&quot;
+[]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response:&#39;, karate.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.57">13:21:14.233 [print] Response: {
+  &quot;status&quot;: 200,
+  &quot;header&quot;: &quot;com.intuit.karate.http.Response$$Lambda$536/0x000002b0674c6788@5c059a68&quot;,
+  &quot;headers&quot;: {
+    &quot;Date&quot;: &quot;Fri, 17 May 2024 07:51:10 GMT&quot;,
+    &quot;Content-Type&quot;: &quot;application/json; charset=utf-8&quot;,
+    &quot;Content-Length&quot;: &quot;2&quot;,
+    &quot;Connection&quot;: &quot;keep-alive&quot;,
+    &quot;x-powered-by&quot;: &quot;Express&quot;,
+    &quot;etag&quot;: &quot;W/\&quot;2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\&quot;&quot;
+  },
+  &quot;headerValues&quot;: &quot;com.intuit.karate.http.Response$$Lambda$568/0x000002b0675152e8@ea7a4c3&quot;,
+  &quot;body&quot;: [
+  ],
+  &quot;dataType&quot;: &quot;json&quot;,
+  &quot;bodyBytes&quot;: &quot;[B@2a8b33ba&quot;,
+  &quot;responseTime&quot;: 754
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:60]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:60]</span>
+                <span class="scenario-name">Update Quantity of an Item in the Cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>659</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:60]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:60]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:21:14.239 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdAndItemIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.61">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+  var itemId = scanner.nextLine();
+  scanner.close();
+  return { cartId: cartId, itemId: itemId };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartAndItemId = readCartIdAndItemIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId and itemId are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartAndItemId.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.77">13:21:14.255 [print] Cart ID: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Item ID:&#39;, cartAndItemId.itemId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.78">13:21:14.255 [print] Item ID: 486115474 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/carts/&#39; + cartAndItemId.cartId + &#39;/items/&#39; + cartAndItemId.itemId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;quantity&quot;: 3}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell passed">642</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.82">13:21:14.259 request:
+1 &gt; PATCH https://simple-grocery-store-api.glitch.me/carts/9QOic9UGyoyprQLqi2cZc/items/486115474
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 14
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;quantity&quot;:3}
+
+13:21:14.899 response time in milliseconds: 639
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:51:11 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 51
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;33-t39aIM0/Vc2mXc13o8N4023nPzo&quot;
+{&quot;error&quot;:&quot;No item with id 486115474 in this cart.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref failed">83</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.83">13:21:14.901 classpath:com/api/automation/cart/createadditems.feature:83
+Then status 204
+status code was: 404, expected: 204, response time in milliseconds: 639, url: https://simple-grocery-store-api.glitch.me/carts/9QOic9UGyoyprQLqi2cZc/items/486115474, response: 
+{&quot;error&quot;:&quot;No item with id 486115474 in this cart.&quot;}
+classpath:com/api/automation/cart/createadditems.feature:83
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref skipped">84</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print &#39;Quantity updated successfully&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref skipped">85</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;classpath:com/api/automation/cart/createadditems.feature@getcart&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print result</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:88]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:88]</span>
+                <span class="scenario-name">Delete the item in the cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>666</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:88]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:21:14.909 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdAndItemIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.89">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+  var itemId = scanner.nextLine();
+  scanner.close();
+  return { cartId: cartId, itemId: itemId };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartAndItemId = readCartIdAndItemIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId and itemId are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartAndItemId.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.105">13:21:14.915 [print] Cart ID: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Item ID:&#39;, cartAndItemId.itemId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.106">13:21:14.916 [print] Item ID: 486115474 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/carts/&#39; + cartAndItemId.cartId + &#39;/items/&#39; + cartAndItemId.itemId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">660</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.109">13:21:14.918 request:
+1 &gt; DELETE https://simple-grocery-store-api.glitch.me/carts/9QOic9UGyoyprQLqi2cZc/items/486115474
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:21:15.575 response time in milliseconds: 657
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:51:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 38
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;26-hMhzfeHEZxz11NLCfL3D0vfEkw0&quot;
+{&quot;error&quot;:&quot;No item with id 486115474.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref failed">110</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.110">13:21:15.577 classpath:com/api/automation/cart/createadditems.feature:110
+Then status 204
+status code was: 404, expected: 204, response time in milliseconds: 657, url: https://simple-grocery-store-api.glitch.me/carts/9QOic9UGyoyprQLqi2cZc/items/486115474, response: 
+{&quot;error&quot;:&quot;No item with id 486115474.&quot;}
+classpath:com/api/automation/cart/createadditems.feature:110
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref skipped">111</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print &#39;Item deleted successfully&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref skipped">112</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>call read(&#39;classpath:com/api/automation/cart/createadditems.feature@getcart&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref skipped">113</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Direct call response==&gt;&#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

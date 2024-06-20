@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/apiauthentication\/registernewclient[1.1:18]","start":1715940367234,"end":1715940368942,"title":"com\/api\/automation\/apiauthentication\/registernewclient[1.1:18] 15:36:07.234-15:36:08.942 Register a New API Client","className":"failed"},{"id":2,"group":2,"content":"com\/api\/automation\/cart\/addItemsToCart[1.1:24]","start":1715940367386,"end":1715940368897,"title":"com\/api\/automation\/cart\/addItemsToCart[1.1:24] 15:36:07.386-15:36:08.897 Add items in the cart","className":"failed"},{"id":3,"group":3,"content":"com\/api\/automation\/cart\/addItemsToCart[1.2:24]","start":1715940367384,"end":1715940368841,"title":"com\/api\/automation\/cart\/addItemsToCart[1.2:24] 15:36:07.384-15:36:08.841 Add items in the cart","className":"failed"},{"id":4,"group":4,"content":"com\/api\/automation\/cart\/addItemsToCart[1.3:24]","start":1715940367384,"end":1715940368830,"title":"com\/api\/automation\/cart\/addItemsToCart[1.3:24] 15:36:07.384-15:36:08.830 Add items in the cart","className":"failed"},{"id":5,"group":5,"content":"com\/api\/automation\/cart\/addItemsToCart[1.4:24]","start":1715940367385,"end":1715940368836,"title":"com\/api\/automation\/cart\/addItemsToCart[1.4:24] 15:36:07.385-15:36:08.836 Add items in the cart","className":"failed"},{"id":6,"group":4,"content":"com\/api\/automation\/cart\/createcart[1:7]","start":1715940368839,"end":1715940369982,"title":"com\/api\/automation\/cart\/createcart[1:7] 15:36:08.839-15:36:09.982 create cart"},{"id":7,"group":5,"content":"com\/api\/automation\/cart\/delete[1:19]","start":1715940368841,"end":1715940369559,"title":"com\/api\/automation\/cart\/delete[1:19] 15:36:08.841-15:36:09.559","className":"failed"},{"id":8,"group":3,"content":"com\/api\/automation\/cart\/getCartItem[1:13]","start":1715940368847,"end":1715940369570,"title":"com\/api\/automation\/cart\/getCartItem[1:13] 15:36:08.847-15:36:09.570","className":"failed"},{"id":9,"group":2,"content":"com\/api\/automation\/cart\/replaceProduct[1.1:30]","start":1715940368902,"end":1715940370027,"title":"com\/api\/automation\/cart\/replaceProduct[1.1:30] 15:36:08.902-15:36:10.027","className":"failed"},{"id":10,"group":1,"content":"com\/api\/automation\/cart\/updateQuantity[1.1:30]","start":1715940368947,"end":1715940370050,"title":"com\/api\/automation\/cart\/updateQuantity[1.1:30] 15:36:08.947-15:36:10.050","className":"failed"},{"id":11,"group":5,"content":"com\/api\/automation\/order\/createOrder[1.1:32]","start":1715940369563,"end":1715940370254,"title":"com\/api\/automation\/order\/createOrder[1.1:32] 15:36:09.563-15:36:10.254","className":"failed"},{"id":12,"group":3,"content":"com\/api\/automation\/order\/deleteOrder[1:18]","start":1715940369574,"end":1715940370293,"title":"com\/api\/automation\/order\/deleteOrder[1:18] 15:36:09.574-15:36:10.293","className":"failed"},{"id":13,"group":4,"content":"com\/api\/automation\/order\/getOrder[1:18]","start":1715940369987,"end":1715940370695,"title":"com\/api\/automation\/order\/getOrder[1:18] 15:36:09.987-15:36:10.695","className":"failed"},{"id":14,"group":2,"content":"com\/api\/automation\/order\/updateOrder[1.1:31]","start":1715940370037,"end":1715940370785,"title":"com\/api\/automation\/order\/updateOrder[1.1:31] 15:36:10.037-15:36:10.785","className":"failed"},{"id":15,"group":1,"content":"com\/api\/automation\/products\/getProduct[1:6]","start":1715940370054,"end":1715940370754,"title":"com\/api\/automation\/products\/getProduct[1:6] 15:36:10.054-15:36:10.754 Retrieve all products"},{"id":16,"group":5,"content":"com\/api\/automation\/products\/getProduct[2:17]","start":1715940370258,"end":1715940370973,"title":"com\/api\/automation\/products\/getProduct[2:17] 15:36:10.258-15:36:10.973 Retrieve a specific product"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

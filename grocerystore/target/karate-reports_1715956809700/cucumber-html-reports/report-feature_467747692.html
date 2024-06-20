@@ -1,0 +1,7146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: com/api/automation/mainseq/mainFlow.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Run</td>
+      <td>17 May 2024, 20:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/api/automation/mainseq/mainFlow.feature</td>
+          <td      class="passed"    >207</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">214</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="28856253300">28.856</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/api/automation/mainseq/mainFlow.feature</span>
+
+
+</div>
+
+        <div class="description indention">To automate the tests</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>20:09:00.951 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">28.855</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To automate</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/status/statusCode.feature&quot;)</span>
+
+  <span class="lead-duration duration">2.138</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/status/statusCode.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/status'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">2.085</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>20:09:01.203 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/status
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:03.061 response time in milliseconds: 1855
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 14:39:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 15
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;f-RQ8OySFd+KR+AvtJ7qImjtT0D/0&quot;
+{&quot;status&quot;:&quot;UP&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>20:09:03.089 [print] {
+  &quot;status&quot;: &quot;UP&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.status == &quot;UP&quot;</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/products/getProduct.feature&quot;)</span>
+
+  <span class="lead-duration duration">1.466</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/products/getProduct.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/products'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.709</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>20:09:03.135 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/products
+1 &gt; Accept: application/json
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:03.837 response time in milliseconds: 700
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 14:39:03 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1716
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;6b4-RVZTrjCoC03tQFslV/oF2zXZ8Wo&quot;
+[{&quot;id&quot;:4643,&quot;category&quot;:&quot;coffee&quot;,&quot;name&quot;:&quot;Starbucks Coffee Variety Pack, 100% Arabica&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:4646,&quot;category&quot;:&quot;coffee&quot;,&quot;name&quot;:&quot;Ethical Bean Medium Dark Roast, Espresso&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:4641,&quot;category&quot;:&quot;coffee&quot;,&quot;name&quot;:&quot;Don Francisco Colombia Supremo Medium Roast&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:1225,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;name&quot;:&quot;1/2 in. Brushless Hammer Drill&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:3674,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;name&quot;:&quot;20V Max Cordless Drill Combo Kit&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:2585,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;name&quot;:&quot;Green Cabbage Organic&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:5851,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;name&quot;:&quot;Cucumber Organic&quot;,&quot;inStock&quot;:false},{&quot;id&quot;:8739,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;name&quot;:&quot;Fresh Spinach Organic&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:2177,&quot;category&quot;:&quot;meat-seafood&quot;,&quot;name&quot;:&quot;Cosco Three Step Steel Platform&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:1709,&quot;category&quot;:&quot;meat-seafood&quot;,&quot;name&quot;:&quot;Beef Choice Angus Ribeye Steak&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:1709,&quot;category&quot;:&quot;meat-seafood&quot;,&quot;name&quot;:&quot;Angus Steak Burgers&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:7395,&quot;category&quot;:&quot;meat-seafood&quot;,&quot;name&quot;:&quot;Boneless Skinless Chicken Breasts&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:8554,&quot;category&quot;:&quot;candy&quot;,&quot;name&quot;:&quot;Kinder Joy Eggs&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:6483,&quot;category&quot;:&quot;candy&quot;,&quot;name&quot;:&quot;Cadbury Milk Chocolate&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:5774,&quot;category&quot;:&quot;candy&quot;,&quot;name&quot;:&quot;HERSHEY'S, Milk Chocolate Almond&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:8753,&quot;category&quot;:&quot;dairy&quot;,&quot;name&quot;:&quot;Reduced Fat Milk&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:9482,&quot;category&quot;:&quot;dairy&quot;,&quot;name&quot;:&quot;Whole Milk&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:5477,&quot;category&quot;:&quot;dairy&quot;,&quot;name&quot;:&quot;Cream Cheese&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:5478,&quot;category&quot;:&quot;dairy&quot;,&quot;name&quot;:&quot;Low Fat Vanilla Yogurt&quot;,&quot;inStock&quot;:true},{&quot;id&quot;:4875,&quot;category&quot;:&quot;bread-bakery&quot;,&quot;name&quot;:&quot;2800 Watt Inverter Generator&quot;,&quot;inStock&quot;:true}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def actualResponse = read(&quot;../productJson.json&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print &quot;Response in json format...&quot;,actualResponse</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>20:09:03.844 [print] Response in json format... [
+  {
+    &quot;id&quot;: 4643,
+    &quot;category&quot;: &quot;coffee&quot;,
+    &quot;name&quot;: &quot;Starbucks Coffee Variety Pack, 100% Arabica&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 4646,
+    &quot;category&quot;: &quot;coffee&quot;,
+    &quot;name&quot;: &quot;Ethical Bean Medium Dark Roast, Espresso&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 4641,
+    &quot;category&quot;: &quot;coffee&quot;,
+    &quot;name&quot;: &quot;Don Francisco Colombia Supremo Medium Roast&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 1225,
+    &quot;category&quot;: &quot;fresh-produce&quot;,
+    &quot;name&quot;: &quot;1/2 in. Brushless Hammer Drill&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 3674,
+    &quot;category&quot;: &quot;fresh-produce&quot;,
+    &quot;name&quot;: &quot;20V Max Cordless Drill Combo Kit&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 2585,
+    &quot;category&quot;: &quot;fresh-produce&quot;,
+    &quot;name&quot;: &quot;Green Cabbage Organic&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 5851,
+    &quot;category&quot;: &quot;fresh-produce&quot;,
+    &quot;name&quot;: &quot;Cucumber Organic&quot;,
+    &quot;inStock&quot;: false
+  },
+  {
+    &quot;id&quot;: 8739,
+    &quot;category&quot;: &quot;fresh-produce&quot;,
+    &quot;name&quot;: &quot;Fresh Spinach Organic&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 2177,
+    &quot;category&quot;: &quot;meat-seafood&quot;,
+    &quot;name&quot;: &quot;Cosco Three Step Steel Platform&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 1709,
+    &quot;category&quot;: &quot;meat-seafood&quot;,
+    &quot;name&quot;: &quot;Beef Choice Angus Ribeye Steak&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 1709,
+    &quot;category&quot;: &quot;meat-seafood&quot;,
+    &quot;name&quot;: &quot;Angus Steak Burgers&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 7395,
+    &quot;category&quot;: &quot;meat-seafood&quot;,
+    &quot;name&quot;: &quot;Boneless Skinless Chicken Breasts&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 8554,
+    &quot;category&quot;: &quot;candy&quot;,
+    &quot;name&quot;: &quot;Kinder Joy Eggs&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 6483,
+    &quot;category&quot;: &quot;candy&quot;,
+    &quot;name&quot;: &quot;Cadbury Milk Chocolate&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 5774,
+    &quot;category&quot;: &quot;candy&quot;,
+    &quot;name&quot;: &quot;HERSHEY'S, Milk Chocolate Almond&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 8753,
+    &quot;category&quot;: &quot;dairy&quot;,
+    &quot;name&quot;: &quot;Reduced Fat Milk&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 9482,
+    &quot;category&quot;: &quot;dairy&quot;,
+    &quot;name&quot;: &quot;Whole Milk&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 5477,
+    &quot;category&quot;: &quot;dairy&quot;,
+    &quot;name&quot;: &quot;Cream Cheese&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 5478,
+    &quot;category&quot;: &quot;dairy&quot;,
+    &quot;name&quot;: &quot;Low Fat Vanilla Yogurt&quot;,
+    &quot;inStock&quot;: true
+  },
+  {
+    &quot;id&quot;: 4875,
+    &quot;category&quot;: &quot;bread-bakery&quot;,
+    &quot;name&quot;: &quot;2800 Watt Inverter Generator&quot;,
+    &quot;inStock&quot;: true
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response == actualResponse</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def productData = read(&quot;../productJson.json&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def firstProduct = karate.jsonPath(productData, '$[0]')</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/products/' + firstProduct.id</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.683</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>20:09:03.896 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/products/4643
+1 &gt; Accept: application/json
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:04.578 response time in milliseconds: 681
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 14:39:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;9f-HOV8MpLmQj4WLcZExQr2z/Z8zWc&quot;
+{&quot;id&quot;:4643,&quot;category&quot;:&quot;coffee&quot;,&quot;name&quot;:&quot;Starbucks Coffee Variety Pack, 100% Arabica&quot;,&quot;manufacturer&quot;:&quot;Starbucks&quot;,&quot;price&quot;:40.91,&quot;current-stock&quot;:14,&quot;inStock&quot;:true}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response contains firstProduct</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/cart/createcart.feature&quot;)</span>
+
+  <span class="lead-duration duration">1.244</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/cart/createcart.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.227</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>20:09:04.599 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/carts
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:05.823 response time in milliseconds: 1223
+1 &lt; 201
+1 &lt; Date: Fri, 17 May 2024 14:39:05 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 49
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;31-kmYxiUNLJvPcR5ZQ8+h+stlohgU&quot;
+{&quot;created&quot;:true,&quot;cartId&quot;:&quot;Jrc_rVMDuY3Ujmz_O5IQg&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = response.cartId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print 'Cart ID:', cartId</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>20:09:05.829 [print] Cart ID: Jrc_rVMDuY3Ujmz_O5IQg 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">karate.write(cartId,'cartId.txt')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>20:09:05.832 write to file: target\cartId.txt
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/cart/addItemsToCart.feature&quot;)</span>
+
+  <span class="lead-duration duration">3.929</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/cart/addItemsToCart.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;productId&quot;: 4643 , &quot;category&quot;: coffee, &quot;quantity&quot;: 1}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>20:09:05.942 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:4643,&quot;category&quot;:&quot;coffee&quot;,&quot;quantity&quot;:1}
+
+20:09:06.927 response time in milliseconds: 984
+1 &lt; 201
+1 &lt; Date: Fri, 17 May 2024 14:39:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;23-N/6SQqp2xnLa14TBLj4GypXa0H0&quot;
+{&quot;created&quot;:true,&quot;itemId&quot;:354030700}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>20:09:06.930 [print] {
+  &quot;created&quot;: true,
+  &quot;itemId&quot;: 354030700
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.created == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def itemId = response.itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">karate.write(itemId, 'itemId.txt')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>20:09:06.934 write to file: target\itemId.txt
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;productId&quot;: 4641 , &quot;category&quot;: coffee, &quot;quantity&quot;: 3}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.980</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>20:09:06.950 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:4641,&quot;category&quot;:&quot;coffee&quot;,&quot;quantity&quot;:3}
+
+20:09:07.926 response time in milliseconds: 975
+1 &lt; 201
+1 &lt; Date: Fri, 17 May 2024 14:39:07 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;23-H1EKgo0eUEc4yxiri1FZVShTGNc&quot;
+{&quot;created&quot;:true,&quot;itemId&quot;:839571010}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>20:09:07.929 [print] {
+  &quot;created&quot;: true,
+  &quot;itemId&quot;: 839571010
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.created == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def itemId = response.itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">karate.write(itemId, 'itemId.txt')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>20:09:07.931 write to file: target\itemId.txt
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;productId&quot;: 1225 , &quot;category&quot;: fresh-produce, &quot;quantity&quot;: 4}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.897</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>20:09:07.944 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:1225,&quot;category&quot;:&quot;fresh-produce&quot;,&quot;quantity&quot;:4}
+
+20:09:08.840 response time in milliseconds: 895
+1 &lt; 201
+1 &lt; Date: Fri, 17 May 2024 14:39:08 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;23-FclGL6fRmJPJy50gsk2s/Fnt6Qw&quot;
+{&quot;created&quot;:true,&quot;itemId&quot;:617612132}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>20:09:08.842 [print] {
+  &quot;created&quot;: true,
+  &quot;itemId&quot;: 617612132
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.created == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def itemId = response.itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">karate.write(itemId, 'itemId.txt')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>20:09:08.844 write to file: target\itemId.txt
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;productId&quot;: 2177 , &quot;category&quot;: meat-seafood, &quot;quantity&quot;: 2}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.904</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>20:09:08.856 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:2177,&quot;category&quot;:&quot;meat-seafood&quot;,&quot;quantity&quot;:2}
+
+20:09:09.758 response time in milliseconds: 901
+1 &lt; 201
+1 &lt; Date: Fri, 17 May 2024 14:39:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;23-Po+1pkNZV0Gr0t3MUE1stfyPhiM&quot;
+{&quot;created&quot;:true,&quot;itemId&quot;:806990805}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>20:09:09.759 [print] {
+  &quot;created&quot;: true,
+  &quot;itemId&quot;: 806990805
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.created == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def itemId = response.itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">karate.write(itemId, 'itemId.txt')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>20:09:09.761 write to file: target\itemId.txt
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/cart/getCartItem.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.756</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/cart/getCartItem.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.742</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>20:09:09.776 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:10.516 response time in milliseconds: 739
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 14:39:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 189
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;bd-RJ6+lgiN330xipdyWalAQVoFLFU&quot;
+[{&quot;id&quot;:354030700,&quot;productId&quot;:4643,&quot;quantity&quot;:1},{&quot;id&quot;:839571010,&quot;productId&quot;:4641,&quot;quantity&quot;:3},{&quot;id&quot;:617612132,&quot;productId&quot;:1225,&quot;quantity&quot;:4},{&quot;id&quot;:806990805,&quot;productId&quot;:2177,&quot;quantity&quot;:2}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>20:09:10.518 [print] [
+  {
+    &quot;id&quot;: 354030700,
+    &quot;productId&quot;: 4643,
+    &quot;quantity&quot;: 1
+  },
+  {
+    &quot;id&quot;: 839571010,
+    &quot;productId&quot;: 4641,
+    &quot;quantity&quot;: 3
+  },
+  {
+    &quot;id&quot;: 617612132,
+    &quot;productId&quot;: 1225,
+    &quot;quantity&quot;: 4
+  },
+  {
+    &quot;id&quot;: 806990805,
+    &quot;productId&quot;: 2177,
+    &quot;quantity&quot;: 2
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/cart/updateQuantity.feature&quot;)</span>
+
+  <span class="lead-duration duration">1.824</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/cart/updateQuantity.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/itemId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def itemId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items/' + itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { &quot;quantity&quot;: 3}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method patch</span>
+
+  <span class="lead-duration duration">1.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>20:09:10.535 request:
+1 &gt; PATCH https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items/806990805
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 14
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;quantity&quot;:3}
+
+20:09:11.547 response time in milliseconds: 1010
+1 &lt; 204
+1 &lt; Date: Fri, 17 May 2024 14:39:11 GMT
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 204</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>20:09:11.548 [print]  
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = call read(&quot;classpath:com/api/automation/cart/getCartItem.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.791</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">com/api/automation/cart/getCartItem.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.776</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>20:09:11.558 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:12.333 response time in milliseconds: 774
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 14:39:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 189
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;bd-R/1wMfsNfyfa87CWMsDHbc8LqYI&quot;
+[{&quot;id&quot;:354030700,&quot;productId&quot;:4643,&quot;quantity&quot;:1},{&quot;id&quot;:839571010,&quot;productId&quot;:4641,&quot;quantity&quot;:3},{&quot;id&quot;:617612132,&quot;productId&quot;:1225,&quot;quantity&quot;:4},{&quot;id&quot;:806990805,&quot;productId&quot;:2177,&quot;quantity&quot;:3}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>20:09:12.339 [print] [
+  {
+    &quot;id&quot;: 354030700,
+    &quot;productId&quot;: 4643,
+    &quot;quantity&quot;: 1
+  },
+  {
+    &quot;id&quot;: 839571010,
+    &quot;productId&quot;: 4641,
+    &quot;quantity&quot;: 3
+  },
+  {
+    &quot;id&quot;: 617612132,
+    &quot;productId&quot;: 1225,
+    &quot;quantity&quot;: 4
+  },
+  {
+    &quot;id&quot;: 806990805,
+    &quot;productId&quot;: 2177,
+    &quot;quantity&quot;: 3
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print result</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>20:09:12.341 [print] {
+  &quot;Scanner&quot;: &quot;java.util.Scanner&quot;,
+  &quot;path&quot;: &quot;C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt&quot;,
+  &quot;file&quot;: &quot;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\target\\cartId.txt&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Fri, 17 May 2024 14:39:12 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;189&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;bd-R/1wMfsNfyfa87CWMsDHbc8LqYI\&quot;&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseTime&quot;: 774,
+  &quot;response&quot;: [
+    {
+      &quot;id&quot;: 354030700,
+      &quot;productId&quot;: 4643,
+      &quot;quantity&quot;: 1
+    },
+    {
+      &quot;id&quot;: 839571010,
+      &quot;productId&quot;: 4641,
+      &quot;quantity&quot;: 3
+    },
+    {
+      &quot;id&quot;: 617612132,
+      &quot;productId&quot;: 1225,
+      &quot;quantity&quot;: 4
+    },
+    {
+      &quot;id&quot;: 806990805,
+      &quot;productId&quot;: 2177,
+      &quot;quantity&quot;: 3
+    }
+  ],
+  &quot;cartId&quot;: &quot;Jrc_rVMDuY3Ujmz_O5IQg&quot;,
+  &quot;scanner&quot;: &quot;java.util.Scanner[delimiters=\\Z][position=21][match valid=true][need input=false][source closed=true][skipped=false][group separator=\\x{2c}][decimal separator=\\x{2e}][positive prefix=][negative prefix=\\Q-\\E][positive suffix=][negative suffix=][NaN string=\\QNaN\\E][infinity string=\\Q&infin;\\E]&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;File&quot;: &quot;java.io.File&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/cart/replaceProduct.feature&quot;)</span>
+
+  <span class="lead-duration duration">1.561</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/cart/replaceProduct.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/itemId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def itemId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items/' + itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { &quot;productId&quot;:8554, &quot;quantity&quot;:2}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.877</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>20:09:12.359 request:
+1 &gt; PUT https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items/806990805
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 31
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;productId&quot;:8554,&quot;quantity&quot;:2}
+
+20:09:13.235 response time in milliseconds: 874
+1 &lt; 204
+1 &lt; Date: Fri, 17 May 2024 14:39:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 204</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>20:09:13.237 [print]  
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = call read(&quot;classpath:com/api/automation/cart/getCartItem.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.664</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">com/api/automation/cart/getCartItem.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.655</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>20:09:13.244 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:13.898 response time in milliseconds: 653
+1 &lt; 200
+1 &lt; Date: Fri, 17 May 2024 14:39:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 189
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;bd-Y2FjanoeA5OLn58viyPzk6sCttA&quot;
+[{&quot;id&quot;:354030700,&quot;productId&quot;:4643,&quot;quantity&quot;:1},{&quot;id&quot;:839571010,&quot;productId&quot;:4641,&quot;quantity&quot;:3},{&quot;id&quot;:617612132,&quot;productId&quot;:1225,&quot;quantity&quot;:4},{&quot;id&quot;:806990805,&quot;productId&quot;:8554,&quot;quantity&quot;:2}]
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>20:09:13.901 [print] [
+  {
+    &quot;id&quot;: 354030700,
+    &quot;productId&quot;: 4643,
+    &quot;quantity&quot;: 1
+  },
+  {
+    &quot;id&quot;: 839571010,
+    &quot;productId&quot;: 4641,
+    &quot;quantity&quot;: 3
+  },
+  {
+    &quot;id&quot;: 617612132,
+    &quot;productId&quot;: 1225,
+    &quot;quantity&quot;: 4
+  },
+  {
+    &quot;id&quot;: 806990805,
+    &quot;productId&quot;: 8554,
+    &quot;quantity&quot;: 2
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print result</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>20:09:13.903 [print] {
+  &quot;Scanner&quot;: &quot;java.util.Scanner&quot;,
+  &quot;path&quot;: &quot;C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt&quot;,
+  &quot;file&quot;: &quot;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\target\\cartId.txt&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Fri, 17 May 2024 14:39:13 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;189&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;bd-Y2FjanoeA5OLn58viyPzk6sCttA\&quot;&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseTime&quot;: 653,
+  &quot;response&quot;: [
+    {
+      &quot;id&quot;: 354030700,
+      &quot;productId&quot;: 4643,
+      &quot;quantity&quot;: 1
+    },
+    {
+      &quot;id&quot;: 839571010,
+      &quot;productId&quot;: 4641,
+      &quot;quantity&quot;: 3
+    },
+    {
+      &quot;id&quot;: 617612132,
+      &quot;productId&quot;: 1225,
+      &quot;quantity&quot;: 4
+    },
+    {
+      &quot;id&quot;: 806990805,
+      &quot;productId&quot;: 8554,
+      &quot;quantity&quot;: 2
+    }
+  ],
+  &quot;cartId&quot;: &quot;Jrc_rVMDuY3Ujmz_O5IQg&quot;,
+  &quot;scanner&quot;: &quot;java.util.Scanner[delimiters=\\Z][position=21][match valid=true][need input=false][source closed=true][skipped=false][group separator=\\x{2c}][decimal separator=\\x{2e}][positive prefix=][negative prefix=\\Q-\\E][positive suffix=][negative suffix=][NaN string=\\QNaN\\E][infinity string=\\Q&infin;\\E]&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;File&quot;: &quot;java.io.File&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/cart/delete.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.850</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-38">
+          <a>js</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: read('getCartItem.feature')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Worksapce\Karate_practice\KarateAssignmentApiAutomation\target\test-classes\com\api\automation\mainseq\getCartItem.feature (The system cannot find the file specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:com/api/automation/cart/delete.feature:25
+classpath:com/api/automation/mainseq/mainFlow.feature:17</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>20:09:14.755 classpath:com/api/automation/mainseq/mainFlow.feature:17
+And call read(&quot;classpath:com/api/automation/cart/delete.feature&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read('getCartItem.feature')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Worksapce\Karate_practice\KarateAssignmentApiAutomation\target\test-classes\com\api\automation\mainseq\getCartItem.feature (The system cannot find the file specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:com/api/automation/cart/delete.feature:25
+classpath:com/api/automation/mainseq/mainFlow.feature:17
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">com/api/automation/cart/delete.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://simple-grocery-store-api.glitch.me'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/cartId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def cartId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def File = Java.type('java.io.File')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Scanner = Java.type('java.util.Scanner')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def path = 'C:/Worksapce/Karate_practice/KarateAssignmentApiAutomation/target/itemId.txt'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def file = new File(path)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def scanner = new Scanner(file)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def itemId = scanner.useDelimiter('\\Z').next()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">scanner.close()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/carts/' + cartId + '/items/' + itemId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.824</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>20:09:13.915 request:
+1 &gt; DELETE https://simple-grocery-store-api.glitch.me/carts/Jrc_rVMDuY3Ujmz_O5IQg/items/806990805
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:09:14.737 response time in milliseconds: 821
+1 &lt; 204
+1 &lt; Date: Fri, 17 May 2024 14:39:14 GMT
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 204</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>20:09:14.739 [print]  
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * failed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = call read('getCartItem.feature')</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-42">
+          <a>js</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: read('getCartItem.feature')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Worksapce\Karate_practice\KarateAssignmentApiAutomation\target\test-classes\com\api\automation\mainseq\getCartItem.feature (The system cannot find the file specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:com/api/automation/cart/delete.feature:25</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>20:09:14.752 classpath:com/api/automation/cart/delete.feature:25
+* def result = call read('getCartItem.feature')
+js failed:
+&gt;&gt;&gt;&gt;
+01: read('getCartItem.feature')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Worksapce\Karate_practice\KarateAssignmentApiAutomation\target\test-classes\com\api\automation\mainseq\getCartItem.feature (The system cannot find the file specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:com/api/automation/cart/delete.feature:25
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/order/createOrder.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/order/getOrder.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/order/updateOrder.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">call read(&quot;classpath:com/api/automation/order/deleteOrder.feature&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

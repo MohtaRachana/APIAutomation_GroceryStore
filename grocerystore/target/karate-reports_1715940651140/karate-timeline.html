@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/apiauthentication\/registernewclient[1.1:18]","start":1715940440504,"end":1715940441851,"title":"com\/api\/automation\/apiauthentication\/registernewclient[1.1:18] 15:37:20.504-15:37:21.851 Register a New API Client","className":"failed"},{"id":2,"group":2,"content":"com\/api\/automation\/cart\/addItemsToCart[1.1:24]","start":1715940440661,"end":1715940443831,"title":"com\/api\/automation\/cart\/addItemsToCart[1.1:24] 15:37:20.661-15:37:23.831 Add items in the cart"},{"id":3,"group":3,"content":"com\/api\/automation\/cart\/addItemsToCart[1.2:24]","start":1715940440654,"end":1715940443506,"title":"com\/api\/automation\/cart\/addItemsToCart[1.2:24] 15:37:20.654-15:37:23.506 Add items in the cart"},{"id":4,"group":4,"content":"com\/api\/automation\/cart\/addItemsToCart[1.3:24]","start":1715940440653,"end":1715940443110,"title":"com\/api\/automation\/cart\/addItemsToCart[1.3:24] 15:37:20.653-15:37:23.110 Add items in the cart"},{"id":5,"group":5,"content":"com\/api\/automation\/cart\/addItemsToCart[1.4:24]","start":1715940440652,"end":1715940442520,"title":"com\/api\/automation\/cart\/addItemsToCart[1.4:24] 15:37:20.652-15:37:22.520 Add items in the cart"},{"id":6,"group":1,"content":"com\/api\/automation\/cart\/createcart[1:7]","start":1715940441858,"end":1715940444296,"title":"com\/api\/automation\/cart\/createcart[1:7] 15:37:21.858-15:37:24.296 create cart"},{"id":7,"group":5,"content":"com\/api\/automation\/cart\/delete[1:19]","start":1715940442524,"end":1715940445507,"title":"com\/api\/automation\/cart\/delete[1:19] 15:37:22.524-15:37:25.507"},{"id":8,"group":4,"content":"com\/api\/automation\/cart\/getCartItem[1:13]","start":1715940443114,"end":1715940444720,"title":"com\/api\/automation\/cart\/getCartItem[1:13] 15:37:23.114-15:37:24.720"},{"id":9,"group":3,"content":"com\/api\/automation\/cart\/replaceProduct[1.1:30]","start":1715940443509,"end":1715940445751,"title":"com\/api\/automation\/cart\/replaceProduct[1.1:30] 15:37:23.509-15:37:25.751"},{"id":10,"group":2,"content":"com\/api\/automation\/cart\/updateQuantity[1.1:30]","start":1715940443834,"end":1715940446096,"title":"com\/api\/automation\/cart\/updateQuantity[1.1:30] 15:37:23.834-15:37:26.096"},{"id":11,"group":1,"content":"com\/api\/automation\/order\/createOrder[1.1:32]","start":1715940444301,"end":1715940445504,"title":"com\/api\/automation\/order\/createOrder[1.1:32] 15:37:24.301-15:37:25.504","className":"failed"},{"id":12,"group":4,"content":"com\/api\/automation\/order\/deleteOrder[1:18]","start":1715940444723,"end":1715940445493,"title":"com\/api\/automation\/order\/deleteOrder[1:18] 15:37:24.723-15:37:25.493","className":"failed"},{"id":13,"group":4,"content":"com\/api\/automation\/order\/getOrder[1:18]","start":1715940445497,"end":1715940446173,"title":"com\/api\/automation\/order\/getOrder[1:18] 15:37:25.497-15:37:26.173","className":"failed"},{"id":14,"group":1,"content":"com\/api\/automation\/order\/updateOrder[1.1:31]","start":1715940445507,"end":1715940446194,"title":"com\/api\/automation\/order\/updateOrder[1.1:31] 15:37:25.507-15:37:26.194","className":"failed"},{"id":15,"group":5,"content":"com\/api\/automation\/products\/getProduct[1:6]","start":1715940445512,"end":1715940446204,"title":"com\/api\/automation\/products\/getProduct[1:6] 15:37:25.512-15:37:26.204 Retrieve all products"},{"id":16,"group":3,"content":"com\/api\/automation\/products\/getProduct[2:17]","start":1715940445757,"end":1715940446453,"title":"com\/api\/automation\/products\/getProduct[2:17] 15:37:25.757-15:37:26.453 Retrieve a specific product"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

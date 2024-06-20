@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"5aa8b7d6-ee3c-46aa-8460-1f939bc78103",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.api.automation.order.orderoperation</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-05-17 12:39:57 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:82]"><span>[1.1:82]</span> <span>Create Order</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:84]"><span>[2:84]</span> <span>Get Order</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:93]"><span>[3:93]</span> <span>Update Order</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:103]"><span>[4:103]</span> <span>Delete Order</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/automation/order/orderoperation.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">order operation of grocery store</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:82]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:82]</span>
+                <span class="scenario-name">Create Order</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1535</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:82]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">12:39:53.242 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read accessToken from secure.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readaccesstokenFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.7">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var access_token = scanner.nextLine();
+			    
+  scanner.close();
+  return { access_token: access_token };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = readaccesstokenFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\apiauthentication\\secure.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the access token are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;AccessToken:&#39;, accessToken.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.23">12:39:53.309 [print] AccessToken: 45007a86584c8c3651e4b375928d8a98545f1320ca4f978d74d8215538341b85 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read cartId from cartId.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref bg-step">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.26">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+			    
+  scanner.close();
+  return { cartId: cartId };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.39">
+      <div class="step-ref bg-step">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartAndItemId = readCartIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:82]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId and itemId are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref bg-step">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartAndItemId.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.42">12:39:53.316 [print] Cart ID: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Given a valid cartId</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/orders&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { cartId: &#39;#(cartAndItemId.cartId)&#39;, customerName:&quot;Rutvi&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1450</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.53">12:39:53.610 request:
+1 &gt; POST https://simple-grocery-store-api.glitch.me/orders
+1 &gt; Authorization: Bearer 45007a86584c8c3651e4b375928d8a98545f1320ca4f978d74d8215538341b85
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cartId&quot;:&quot;9QOic9UGyoyprQLqi2cZc&quot;,&quot;customerName&quot;:&quot;Rutvi&quot;}
+
+12:39:54.805 response time in milliseconds: 1191
+1 &lt; 400
+1 &lt; Date: Fri, 17 May 2024 07:09:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 30
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;1e-zBhTjWvzZnIojCa+Tztt+h6KNt4&quot;
+{&quot;error&quot;:&quot;The cart is empty.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref failed">54</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.54">12:39:54.813 classpath:com/api/automation/order/orderoperation.feature:54
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 1191, url: https://simple-grocery-store-api.glitch.me/orders, response: 
+{&quot;error&quot;:&quot;The cart is empty.&quot;}
+classpath:com/api/automation/order/orderoperation.feature:54
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.created == true</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def orderId = response.orderId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#write orderId</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref skipped">58</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def writeToFile =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.58">function(filePath, content) {
+ 		var File = Java.type(&#39;java.io.File&#39;);
+ 		var FileWriter = Java.type(&#39;java.io.FileWriter&#39;);
+ 		var BufferedWriter = Java.type(&#39;java.io.BufferedWriter&#39;);
+ 		try {
+      var file = new File(filePath);
+      var writer = new FileWriter(file,true);
+      var bufferedWriter = new BufferedWriter(writer);
+      bufferedWriter.write(content);
+      bufferedWriter.newLine();
+      bufferedWriter.close();
+      return true;
+ 		} catch (e) {
+   				karate.log(&#39;Failed to write to file:&#39;, e);
+   				return false;
+ 			}
+		}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Then call the function</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>eval writeToFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\order\\orderId.txt&#39;, orderId)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:84]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:84]</span>
+                <span class="scenario-name">Get Order</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>691</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:84]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:39:54.832 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read accessToken from secure.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readaccesstokenFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var access_token = scanner.nextLine();
+			    
+  scanner.close();
+  return { access_token: access_token };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = readaccesstokenFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\apiauthentication\\secure.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the access token are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;AccessToken:&#39;, accessToken.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">12:39:54.839 [print] AccessToken: 45007a86584c8c3651e4b375928d8a98545f1320ca4f978d74d8215538341b85 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read cartId from cartId.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref bg-step">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.26">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+			    
+  scanner.close();
+  return { cartId: cartId };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref bg-step">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartAndItemId = readCartIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:84]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId and itemId are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref bg-step">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartAndItemId.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">12:39:54.848 [print] Cart ID: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Given an existing orderId</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/orders/{orderId}&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { orderId: &#39;#(orderId)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">664</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.88">12:39:54.865 request:
+1 &gt; GET https://simple-grocery-store-api.glitch.me/orders/%7BorderId%7D?orderId=%23%28orderId%29
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:55.524 response time in milliseconds: 657
+1 &lt; 401
+1 &lt; Date: Fri, 17 May 2024 07:09:52 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 41
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;29-zVtH8ziijw/ex5/btOYG8wWe5dk&quot;
+{&quot;error&quot;:&quot;Missing Authorization header.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref failed">89</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.89">12:39:55.527 classpath:com/api/automation/order/orderoperation.feature:89
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 657, url: https://simple-grocery-store-api.glitch.me/orders/%7BorderId%7D?orderId=%23%28orderId%29, response: 
+{&quot;error&quot;:&quot;Missing Authorization header.&quot;}
+classpath:com/api/automation/order/orderoperation.feature:89
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref skipped">90</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.orderId == &#39;#(orderId)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref skipped">91</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.cartId == &#39;#(cartId)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:93]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:93]</span>
+                <span class="scenario-name">Update Order</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>783</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:93]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:39:55.536 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read accessToken from secure.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readaccesstokenFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var access_token = scanner.nextLine();
+			    
+  scanner.close();
+  return { access_token: access_token };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = readaccesstokenFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\apiauthentication\\secure.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the access token are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;AccessToken:&#39;, accessToken.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">12:39:55.543 [print] AccessToken: 45007a86584c8c3651e4b375928d8a98545f1320ca4f978d74d8215538341b85 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read cartId from cartId.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref bg-step">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.26">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+			    
+  scanner.close();
+  return { cartId: cartId };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref bg-step">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartAndItemId = readCartIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:93]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId and itemId are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref bg-step">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartAndItemId.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">12:39:55.546 [print] Cart ID: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Given an existing orderId</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/orders/{orderId}&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { orderId: &#39;#(orderId)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { cartId: &#39;#(cartId)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">771</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.98">12:39:55.552 request:
+1 &gt; PUT https://simple-grocery-store-api.glitch.me/orders/%7BorderId%7D?orderId=%23%28orderId%29
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 22
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cartId&quot;:&quot;#(cartId)&quot;}
+
+12:39:56.319 response time in milliseconds: 766
+1 &lt; 404
+1 &lt; Date: Fri, 17 May 2024 07:09:52 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;54-0M1W4PX+XMa0VrPIhDCvHEdTW2w&quot;
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref failed">99</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">12:39:56.322 classpath:com/api/automation/order/orderoperation.feature:99
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 766, url: https://simple-grocery-store-api.glitch.me/orders/%7BorderId%7D?orderId=%23%28orderId%29, response: 
+{&quot;error&quot;:&quot;The resource could not be found. Check your endpoint and request method.&quot;}
+classpath:com/api/automation/order/orderoperation.feature:99
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref skipped">100</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.orderId == &#39;#(orderId)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref skipped">101</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.cartId == &#39;#(cartId)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:103]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:103]</span>
+                <span class="scenario-name">Delete Order</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>692</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:103]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://simple-grocery-store-api.glitch.me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:39:56.330 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read accessToken from secure.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readaccesstokenFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var access_token = scanner.nextLine();
+			    
+  scanner.close();
+  return { access_token: access_token };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = readaccesstokenFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\apiauthentication\\secure.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the access token are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;AccessToken:&#39;, accessToken.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">12:39:56.337 [print] AccessToken: 45007a86584c8c3651e4b375928d8a98545f1320ca4f978d74d8215538341b85 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read cartId from cartId.txt</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref bg-step">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readCartIdFromFile =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.26">function(filePath) {
+  var file = new java.io.File(filePath);
+  var scanner = new java.util.Scanner(file);
+  var cartId = scanner.nextLine();
+			    
+  scanner.close();
+  return { cartId: cartId };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the function to read the cartId from the file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref bg-step">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartAndItemId = readCartIdFromFile(&#39;C:\\Worksapce\\Karate_practice\\KarateAssignmentApiAutomation\\src\\test\\java\\com\\api\\automation\\cart\\cartId.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:103]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ensure the cartId and itemId are read correctly</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref bg-step">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Cart ID:&#39;, cartAndItemId.cartId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">12:39:56.342 [print] Cart ID: 9QOic9UGyoyprQLqi2cZc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Given an existing orderId</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/orders/{orderId}&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { orderId: &#39;#(orderId)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">681</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.107">12:39:56.345 request:
+1 &gt; DELETE https://simple-grocery-store-api.glitch.me/orders/%7BorderId%7D?orderId=%23%28orderId%29
+1 &gt; Host: simple-grocery-store-api.glitch.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:57.022 response time in milliseconds: 676
+1 &lt; 401
+1 &lt; Date: Fri, 17 May 2024 07:09:53 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 41
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; etag: W/&quot;29-zVtH8ziijw/ex5/btOYG8wWe5dk&quot;
+{&quot;error&quot;:&quot;Missing Authorization header.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref failed">108</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.108">12:39:57.024 classpath:com/api/automation/order/orderoperation.feature:108
+Then status 204
+status code was: 401, expected: 204, response time in milliseconds: 676, url: https://simple-grocery-store-api.glitch.me/orders/%7BorderId%7D?orderId=%23%28orderId%29, response: 
+{&quot;error&quot;:&quot;Missing Authorization header.&quot;}
+classpath:com/api/automation/order/orderoperation.feature:108
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
