@@ -26,14 +26,14 @@ jobs:
           Invoke-WebRequest -Uri https://dl.google.com/chrome/install/375.126/chrome_installer.exe -OutFile chrome_installer.exe
           Start-Process chrome_installer.exe -ArgumentList '/silent /install' -NoNewWindow -Wait
           Remove-Item chrome_installer.exe
-        shell: powershell
+        
 
       - name: Download and Install ChromeDriver
         run: |
          Invoke-WebRequest -Uri https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_win32.zip -OutFile chromedriver.zip
          Expand-Archive -Path chromedriver.zip -DestinationPath $env:ProgramFiles\ChromeDriver\
          Remove-Item chromedriver.zip
-         shell: powershell
+         
 
       - name: Find available port and start Chrome
         id: chrome
@@ -41,11 +41,11 @@ jobs:
          $port = Get-Random -Minimum 8000 -Maximum 9999
          echo "PORT=$port" >> $env:GITHUB_ENV
          Start-Process 'C:\Program Files\Google\Chrome\Application\chrome.exe' -ArgumentList "--remote-debugging-port=$port --headless --disable-gpu --no-sandbox" -NoNewWindow
-         shell: powershell
+         
 
       - name: Set up environment
         run: echo "PORT=$env:PORT" >> $env:GITHUB_ENV
-        shell: powershell
+        
 
 
       - name: Set up JDK 11
