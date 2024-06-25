@@ -61,8 +61,8 @@ jobs:
       - name: Run cart Scenarios
         working-directory: grocerystore  # Set the working directory to GroceryStore
         run: |
-          mvn clean test -Dtest=TestCartRunner -Dmaven.test.failure.ignore=true
-         #grocerystore/src/test/java/com/api/automation/cart/TestCartRunner.java
+         echo "Running cart scenarios"
+         mvn clean test -Dtest=TestCartRunner -Dkarate.env=ci -Dkarate.port=$env:PORT -Dmaven.test.failure.ignore=true
 
       - name: Generate Karate Test Report
         if: always()  # Always run this step
