@@ -54,13 +54,13 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: surefire-test-report
-          path: swaglab/target/surefire-reports
+          path: grocerystore/target/surefire-reports
 
       - name: Generate Karate Test Report
         if: always()  # Always run this step
         run: |
           mkdir -p karate-reports
-          cp -r swaglab/target/karate-reports/* karate-reports/
+          cp -r grocerystore/target/karate-reports/* karate-reports/
         
       - name: Upload Karate Test Report
         if: always()  # Always run this step
