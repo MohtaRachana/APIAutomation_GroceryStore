@@ -20,19 +20,13 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('grocerystore/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
+      
+
       - name: Download Chrome Installer
         run: Invoke-WebRequest -Uri 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile 'chrome_installer.exe'
 
       - name: Install Chrome
         run: .\chrome_installer.exe /silent /install  # Install Chrome silently
-
-      - name: Find available port and start Chrome
-        id: chrome
-        run: |
-          $PORT = (Get-Random -Minimum 8000 -Maximum 9999)
-          echo "PORT=$PORT" >> $env:GITHUB_ENV
-          start chrome --headless --remote-debugging-port=$PORT
-        shell: powershell
 
 
       - name: Set up JDK 11
